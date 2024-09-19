@@ -38,6 +38,11 @@ section {
   flex-shrink: 0;
 }
 
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header-color,
 .footer-color {
   background: #4f6272;
@@ -91,6 +96,16 @@ section {
 .subtitle-text {
   font-size: 1.9rem;
   font-weight: 600;
+}
+
+.footer-text-fixed {
+  align-self: center;
+  text-align: center;
+  flex-grow: 1;
+  color: #4f6272;
+  position: sticky;
+  margin-bottom: 0;
+  bottom: 0;
 }
 
 b {

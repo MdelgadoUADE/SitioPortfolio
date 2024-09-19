@@ -1,6 +1,12 @@
 @use "./designs.scss" as d;
 
 // Reglas generales para todas las paginas, se añaden las paginas especificas en otros archivos sass
+// INSTRUCCIONES DE MANTENIMIENTO:
+// Como tener una unica stylesheet me parece monolitico se hace un hoja comun para todos y se separan otras hojas especificas por paginas de contenido
+// stylesheet: contiene el formateo general para todas las paginas
+// index, portfolio, blog, contact: contienen formateos especificos para el contenido dentro del main
+
+// Casi todo se maneja con clases y selectores dentro de la misma para evitar tener que hace mantenimiento a elementos directos que anda a saber donde esta el problema
 
 // Reset css
 * {
@@ -16,7 +22,7 @@ body {
   // -----------------
   // ¡¡¡AVISO!!!
   // -----------------
-  // Por alguna razon el body en el devtool del navegador chromium, usar FF o Edge
+  // Por alguna razon el body en el devtool del navegador chromium se achica y genera errores, usar FF o Edge para testeo
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -45,6 +51,11 @@ section {
 
 .footer-adjust-bottom {
   flex-shrink: 0;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-color,
@@ -109,6 +120,16 @@ section {
 .subtitle-text {
   font-size: 1.9rem;
   font-weight: 600;
+}
+
+.footer-text-fixed {
+  align-self: center;
+  text-align: center;
+  flex-grow: 1;
+  color: d.$primary-color;
+  position: sticky;
+  margin-bottom: 0;
+  bottom: 0;
 }
 
 b {

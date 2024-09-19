@@ -1,19 +1,6 @@
 @forward "./stylesheet.scss";
 @use "./stylesheet.scss" as main;
-
-.force-left {
-  margin-left: 0;
-  margin-right: 0;
-  text-align: left;
-}
-
-.photo-offset {
-  margin-top: 2.3rem;
-  margin-bottom: 10rem;
-  float: right;
-  width: 35%;
-  border-radius: 100%;
-}
+@use "./designs.scss" as d;
 
 .p-width-adjust {
   > p {
@@ -32,6 +19,34 @@
   }
 }
 
+.force-left {
+  margin-left: 0;
+  margin-right: 0;
+  text-align: left;
+}
+p.force-fit-width {
+  display: inline-block;
+  width: fit-content;
+  margin-right: 2rem;
+}
+
+.photo-offset {
+  margin-top: 2.3rem;
+  margin-bottom: 10rem;
+  float: right;
+  width: 35%;
+  border-radius: 100%;
+}
+
 .clear-floats {
   clear: both;
+}
+
+a.button-box {
+  border-radius: 30px;
+  padding: 0.5rem;
+  color: white;
+  display: inline-block;
+  width: fit-content;
+  background-color: d.$primary-color;
 }
