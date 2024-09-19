@@ -1,0 +1,37 @@
+@forward "./stylesheet.scss";
+@use "./stylesheet.scss" as main;
+
+.force-left {
+  margin-left: 0;
+  margin-right: 0;
+  text-align: left;
+}
+
+.photo-offset {
+  margin-top: 2.3rem;
+  margin-bottom: 10rem;
+  float: right;
+  width: 35%;
+  border-radius: 100%;
+}
+
+.p-width-adjust {
+  > p {
+    width: 55%;
+  }
+  > ul {
+    padding-left: 2rem;
+  }
+  &-max {
+    > p {
+      width: 75%;
+    }
+    > ul {
+      padding-left: 2rem;
+    }
+  }
+}
+
+.clear-floats {
+  clear: both;
+}

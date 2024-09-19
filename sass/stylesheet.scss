@@ -4,6 +4,7 @@
 
 // Reset css
 * {
+  font-family: Bahnschrift;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -29,6 +30,10 @@ body {
   > main {
     flex: 1 0 auto;
   }
+}
+
+section {
+  margin-bottom: 15vh;
 }
 
 // header flex para todas las paginas
@@ -76,5 +81,48 @@ body {
         color: d.$primary-color;
       }
     }
+  }
+}
+
+// TEXT MODIFICATIONS
+* {
+  font-size: 1.2rem;
+}
+
+.title-text {
+  margin: auto;
+  align-self: center;
+  font-weight: 900;
+  width: fit-content;
+  font-size: 3rem;
+  letter-spacing: 1.4px;
+  text-align: center;
+  color: d.$primary-color;
+  margin-bottom: 3rem;
+}
+
+.logotype-text {
+  font-weight: 800;
+  font-size: 2.5rem;
+  letter-spacing: 1.5px;
+}
+.subtitle-text {
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+b {
+  color: d.$warning-color;
+  &.reference {
+    color: d.$tertiary-color;
+  }
+}
+p {
+  margin-bottom: 1.6rem;
+}
+
+@media (max-device-width: 425px) {
+  .modify-li-items > nav {
+    display: none;
   }
 }

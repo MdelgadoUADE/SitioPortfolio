@@ -109,3 +109,33 @@ p {
     display: none;
   }
 }
+.force-left {
+  margin-left: 0;
+  margin-right: 0;
+  text-align: left;
+}
+
+.photo-offset {
+  margin-top: 2.3rem;
+  margin-bottom: 10rem;
+  float: right;
+  width: 35%;
+  border-radius: 100%;
+}
+
+.p-width-adjust > p {
+  width: 55%;
+}
+.p-width-adjust > ul {
+  padding-left: 2rem;
+}
+.p-width-adjust-max > p {
+  width: 75%;
+}
+.p-width-adjust-max > ul {
+  padding-left: 2rem;
+}
+
+.clear-floats {
+  clear: both;
+}
