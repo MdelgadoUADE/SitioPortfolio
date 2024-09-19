@@ -1,0 +1,80 @@
+@use "./designs.scss" as d;
+
+// Reglas generales para todas las paginas, se añaden las paginas especificas en otros archivos sass
+
+// Reset css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// color de cuerpo, se declara un flex para empujar el footer abajo
+body {
+  // se utiliza viewheigh para tener la altura del aparato, se probo con % pero no funciona
+  // -----------------
+  // ¡¡¡AVISO!!!
+  // -----------------
+  // Por alguna razon el body en el devtool del navegador chromium, usar FF o Edge
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: d.$bg-color;
+
+  > header,
+  > main,
+  > footer {
+    padding: 1rem 2rem;
+  }
+  > main {
+    flex: 1 0 auto;
+  }
+}
+
+// header flex para todas las paginas
+.header-flex {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-adjust-bottom {
+  flex-shrink: 0;
+}
+
+.header-color,
+.footer-color {
+  background: d.$primary-color;
+
+  background: linear-gradient(
+    180deg,
+    d.$gradient-color-0 0%,
+    d.$gradient-color-100 100%
+  );
+}
+.footer-color {
+  background: linear-gradient(
+    0deg,
+    d.$gradient-color-0 0%,
+    d.$gradient-color-100 100%
+  );
+}
+
+.modify-li-items {
+  > nav > ul {
+    list-style-type: none;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    > li {
+      padding: 0 1rem;
+      > a {
+        text-decoration: none;
+        color: d.$mustard-color;
+      }
+      .selected {
+        color: d.$primary-color;
+      }
+    }
+  }
+}
