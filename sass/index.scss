@@ -43,10 +43,52 @@ p.force-fit-width {
 }
 
 a.button-box {
-  border-radius: 30px;
-  padding: 0.5rem;
+  border-radius: 50px;
+  padding: 1rem;
   color: white;
   display: inline-block;
   width: fit-content;
   background-color: d.$primary-color;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  > * {
+    margin: 0 1.5rem;
+  }
+  &-row-wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  & ul {
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+    > * {
+      width: 55%;
+      margin-bottom: 1rem;
+    }
+    > a {
+      width: initial;
+    }
+    > h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      width: 100%;
+    }
+  }
+}
+
+img.float-img-left {
+  float: left;
+}
+img.float-img-right {
+  float: right;
 }

@@ -7,9 +7,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: visible;
 }
 
 body {
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -18,6 +20,7 @@ body {
 body > header,
 body > main,
 body > footer {
+  width: 100%;
   padding: 1rem 2rem;
 }
 body > main {
@@ -70,8 +73,20 @@ section {
   color: #4f6272;
 }
 
+.float-right {
+  float: right;
+}
+
+.padding-bottom {
+  padding-bottom: 2rem;
+}
+
 * {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .title-text {
@@ -85,6 +100,10 @@ section {
   text-align: center;
   color: #4f6272;
   margin-bottom: 3rem;
+}
+.title-text.reduced {
+  font-weight: 800;
+  font-size: 2rem;
 }
 
 .logotype-text {
@@ -108,10 +127,15 @@ section {
   bottom: 0;
 }
 
+.text-right {
+  text-align: right;
+}
+
 b {
   color: #ff4f00;
 }
-b.reference {
+
+.reference {
   color: #a63d40;
 }
 
@@ -119,7 +143,30 @@ p {
   margin-bottom: 1.6rem;
 }
 
+@media (max-device-width: 1440px) {
+  * {
+    font-size: 1.3rem;
+  }
+}
+@media (max-device-width: 1024px) {
+  * {
+    font-size: 1.2rem;
+  }
+}
 @media (max-device-width: 425px) {
+  * > main {
+    margin: auto;
+  }
+  * > main > section > p {
+    margin: auto;
+    margin-bottom: revert;
+  }
+  .title-text {
+    font-size: 2.5rem;
+  }
+  .logotype-text {
+    font-size: 1.5rem;
+  }
   .modify-li-items > nav {
     display: none;
   }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/stylesheet.css" />
+    <link rel="stylesheet" href="../css/portfolio.css" />
     <title>Portafolio | Matías Delgado</title>
   </head>
   <body>
@@ -15,7 +15,7 @@
           <li>
             <a href="../index.html">Inicio</a>
           </li>
-          <li>
+          <li class="underline">
             <a href="./portfolio.html" class="selected">Portafolio</a>
           </li>
           <li>
@@ -29,112 +29,113 @@
     </header>
 
     <main>
-      <h2 class="title-text">Portafolio</h2>
+      <h2 class="title-text underline">Portafolio</h2>
       <!-- Portafolio -->
-      <h2>Proyectos Realizados</h2>
+      <h2 class="subtitle-text reference underline">Proyectos Realizados</h2>
       <!--       
       - Proyectos destacados con descripciones 
       - Detalles sobre rol, herramientas y resultados
       - Enlace a muestra de trabajos o casos de estudio 
       -->
-      <div id="biography">
-        <h3>Biografia de Alicia Dubois</h3>
-        <h4>Descripcion de trabajo</h4>
+      <section id="biography" class="flex-container adjust-margin-boxes">
+        <h3 class="title-text reduced force-left">
+          Biografia de Alicia Dubois
+        </h3>
+        <h4 class="subtitle-text">Descripcion de trabajo</h4>
         <p>
           Sitio web creado en github pages para demostracion de
-          <strong>trabajo con HTML</strong>
+          <b>trabajo con HTML</b>
         </p>
-        <h4>Herramientas y resultado</h4>
+        <h4 class="subtitle-text">Herramientas y resultado</h4>
         <p>
           Creado por cuenta propia, se utilizo HTML para el desarrollo de esta
           pagina con resultados basicos, navegación a otras paginas con links
-          uso de tags &lt;img&gt;, &lt;a&gt;.
+          <b>uso de tags &lt;img&gt;, &lt;a&gt;</b>.
         </p>
-        <h4>Enlaces e imagenes</h4>
+        <h4 class="subtitle-text">Enlaces e imagenes</h4>
         <img
+          class="flex-container-img image-transform"
           src="../img/portfolioImages/biography/Screenshot1.png"
           alt="Imagen de la pagina, mostrando texto, links e imagenes de la misma"
-          height="320"
         />
         <a
           href="https://mdelgadouade.github.io/delgado_1146841_13082024_IntroaHTML/"
           target="_blank"
+          class="button-box flex-container-center"
           >Link a web</a
         >
-      </div>
-      <br />
+      </section>
       <!-- Curriculum
       Resumen detallado de la experiencia laboral, educación y habilidades. -->
-      <h2>Curriculum</h2>
-      <img
-        src="../img/portfolioImages/MatiasDelgado2024.jpg"
-        alt="Imagen de mi Curriculum Vitae"
-        height="1080"
-      />
-      <!-- Opción para descargar el currículum en formato PDF, además de incluir una versión en línea. -->
-      <a href="../files/MatiasDelgado2024.pdf" download=""
-        >Descargar CV Español</a
-      >
-      <a href="../files/MatiasDelgado2024_English.pdf" download=""
-        >Descargar CV Ingles</a
-      >
-      <!-- Servicios
-      Lista de los servicios ofrecidos. 
-      Descripción detallada de cada servicio y cómo pueden ayudar a los clientes o
-      empleadores. 
-      -->
+      <section class="flex-container row">
+        <h2 class="title-text underline padding-bottom">Curriculum</h2>
+        <img
+          src="../img/portfolioImages/MatiasDelgado2024.jpg"
+          alt="Imagen de mi Curriculum Vitae"
+          height="1080"
+          class="flex-container-img-small"
+        />
+        <div class="flex-container flex-direction-column">
+          <a href="../files/MatiasDelgado2024.pdf" download=""
+            >Descargar CV Español</a
+          >
+          <a href="../files/MatiasDelgado2024_English.pdf" download=""
+            >Descargar CV Ingles</a
+          >
+          <img
+            src="../img/portfolioImages/GraphHabilidades.png"
+            alt="Grafico con habilidades y sus niveles respectivos"
+            class="flex-container-img-smaller"
+          />
+        </div>
+        <!-- Opción para descargar el currículum en formato PDF, además de incluir una versión en línea. -->
+        <!-- Servicios
+        Lista de los servicios ofrecidos. 
+        Descripción detallada de cada servicio y cómo pueden ayudar a los clientes o
+        empleadores. 
+        -->
+      </section>
 
-      <h2>Servicios</h2>
-      <p><strong>Maquetación de paginas</strong></p>
-      <p>
-        Creación de maquetas en conjunto con el cliente para luego servir de
-        guia para el desarrollo de un sitio web
-      </p>
-      <p><strong>Creación de paginas web</strong></p>
-      <p>
-        Desarrollo y creacion de paginas web para su publicación, contando tanto
-        con experiencia en HTML y CSS
-      </p>
-      <br />
-      <!-- Habilidades 
-      Detalles sobre competencias técnicas y blandas.
-      Gráficos o indicadores del nivel de habilidad en diferentes áreas. 
-      -->
-      <img
-        src="../img/portfolioImages/GraphHabilidades.png"
-        alt="Grafico con habilidades y sus niveles respectivos"
-      />
-      <!-- Certificaciones y reconocimientos 
-      Certificaciones profesionales, premios o reconocimientos obtenidos.
-      Breve descripción de cada uno. 
-      -->
-      <h2>Certificaciones y reconocimientos</h2>
-      <h3>Coderhouse</h3>
-      <ul>
-        <li>Certificado de Desarrollo Web</li>
-        <a
-          href="https://www.coderhouse.com/ar/certificados/6388d277714c5b000e0e5dea?lang="
-          target="_blank"
-          ><p>Link a certificado</p></a
-        >
-      </ul>
-      <h3>Kubicles</h3>
-      <ul>
-        <li></li>
-        <p>Link a certificado:</p>
-        <a
-          href="https://www.linkedin.com/in/mdelgadomoina/details/certifications/"
-          target="_blank"
-          >En LinkedIn</a
-        >
-        <li></li>
-        <p>Link a certificado:</p>
-        <a
-          href="https://www.linkedin.com/in/mdelgadomoina/details/certifications/"
-          target="_blank"
-          >En LinkedIn</a
-        >
-      </ul>
+      <section class="flex-container">
+        <h2 class="title-text">Certificaciones y reconocimientos</h2>
+        <h3 class="subtitle-text reference">Coderhouse</h3>
+        <ul>
+          <li>Certificado de Desarrollo Web</li>
+          <a
+            href="https://www.coderhouse.com/ar/certificados/6388d277714c5b000e0e5dea?lang="
+            target="_blank"
+            class="text-right"
+            >Link a certificado</a
+          >
+        </ul>
+        <h3 class="subtitle-text reference">Kubicles</h3>
+        <ul>
+          <li>AI Fundamentals</li>
+          <a
+            href="https://www.linkedin.com/in/mdelgadomoina/details/certifications/"
+            target="_blank"
+            class="text-right"
+            >Link a certificado</a
+          >
+          <li>Principles of Generative AI</li>
+          <a
+            href="https://www.linkedin.com/in/mdelgadomoina/details/certifications/"
+            target="_blank"
+            class="text-right"
+            >Link a certificado</a
+          >
+        </ul>
+        <ul>
+          <h3 class="subtitle-text reference">University of Cambridge</h3>
+          <li>C1 Advanced (Grade C)</li>
+          <a
+            href="https://www.linkedin.com/in/mdelgadomoina/details/certifications/"
+            target="_blank"
+            class="text-right"
+            >Link a certificado</a
+          >
+        </ul>
+      </section>
     </main>
     <footer class="footer-flex footer-color footer-adjust-bottom">
       <a href="./contact.html"><strong>Contactos</strong></a>
