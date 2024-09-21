@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/contact.css" />
+    <link rel="stylesheet" href="../css/main.css" />
 
     <title>Contacto | Matías Delgado</title>
   </head>
@@ -11,7 +11,10 @@
     <header class="header-flex header-color modify-li-items">
       <h1 class="logotype-text">Matías Delgado</h1>
       <!-- Primary nav -->
-      <nav class="subtitle-text">
+      <!-- Esperando a clase de JS para añadir menu -->
+      <button class="abrir-menu" id="open">abrir</button>
+      <nav class="subtitle-text" id="nav">
+        <button class="cerrar-menu" id="close">cerrar</button>
         <ul>
           <li>
             <a href="../index.html">Inicio</a>
@@ -22,8 +25,8 @@
           <li>
             <a href="./blog.html">Blog</a>
           </li>
-          <li class="underline">
-            <a href="./contact.html" class="selected">Contacto</a>
+          <li class="underline selected">
+            <a href="./contact.html">Contacto</a>
           </li>
         </ul>
       </nav>

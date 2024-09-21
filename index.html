@@ -4,17 +4,20 @@
     <!-- Website creado por Matías Delgado -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Inicio | Matías Delgado</title>
   </head>
   <body>
     <header class="header-flex header-color modify-li-items">
       <h1 class="logotype-text">Matías Delgado</h1>
       <!-- Primary nav -->
-      <nav class="subtitle-text">
+      <!-- Esperando a clase de JS para añadir menu -->
+      <button class="abrir-menu" id="open">abrir</button>
+      <nav class="subtitle-text" id="nav">
+        <button class="cerrar-menu" id="close">cerrar</button>
         <ul>
-          <li class="underline">
-            <a href="./index.html" class="selected">Inicio</a>
+          <li class="underline selected">
+            <a href="./index.html">Inicio</a>
           </li>
           <li>
             <a href="./pages/portfolio.html">Portafolio</a>
@@ -41,24 +44,24 @@
 
       <section class="p-width-adjust">
         <p>
-          Programador en formación, actualmente me encuentro trabajando
+          Programador en formación, actualmente estoy trabajando
           <b>en este sitio web</b>
         </p>
         <!-- Experiencias y logros mas relevantes -->
         <p>
-          Hoy en dia me encuentro trabajando bajo una importante empresa
-          internacional de consultoria, bajo su equipo de tecnologia
+          Hoy en día estoy empleado por
+          <b class="reference">PwC Argentina</b>, bajo su equipo de tecnologia
         </p>
         <p>
-          Estoy estudiando en <b class="reference">UADE</b> la carrera de
+          Estoy estudiando en la <b class="reference">UADE</b> la carrera de
           <b>Tecnicatura Universitaria En Desarrollo de Software</b>
         </p>
         <p>
-          Tengo ademas Certificacion en Desarrollo web de parte de
+          Además, tengo certificación en <b>Desarrollo web</b> de parte de
           <b class="reference">CoderHouse</b>
         </p>
         <p>
-          Trabajando duro para sumar certificaciones de
+          Esforzandome para sumar certificaciones de
           <b class="reference">Red Hat</b> 💪💪
         </p>
         <p class="force-fit-width subtitle-text M-l container-center">
@@ -75,15 +78,15 @@
         <!-- Sobre mi -->
         <!-- Biografia corta y personal -->
         <p>
-          Tengo 22 años contando hasta Febrero 2024, me gustan los videojuegos,
-          juegos de rol y leer, mi libro y saga de peliculas favoritas son "El
-          Señor de los Anillos" de Tolkien 🧙
+          Actualmente tengo 22 años. Me apasionan los videojuegos y juegos de
+          rol. Mi libro y saga de películas favoritas es 'El Señor de los
+          Anillos' de Tolkien 🧙.
         </p>
         <p>
-          Algunos temas de mi interes son:
+          Mis intereses incluyen:
           <b>
-            Historia, Desarrollo de Videojuegos, Economia, Inteligencia
-            Artificial
+            Historia, Desarrollo de Videojuegos, Economía e Inteligencia
+            Artificial.
           </b>
         </p>
 
@@ -108,17 +111,17 @@
             </p>
           </li>
           <li>
-            <p><strong>Actualmente estudiando en UADE</strong></p>
+            <p><strong>Actualmente estudio en la UADE</strong></p>
           </li>
         </ul>
         <div class="flex-container">
           <a
             href="./pages/portfolio.html"
             class="button-box subtitle-text M-l margin-bottom"
-            >¿Quieres saber más?</a
+            >¿Queres saber más?</a
           >
           <p class="force-fit-width subtitle-text M-l container-center">
-            ¡Revisá el Portafolio!
+            ¡Revisá el Portfolio!
           </p>
         </div>
       </section>

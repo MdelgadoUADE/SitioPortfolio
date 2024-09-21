@@ -52,7 +52,7 @@ section.flex-container {
   flex-direction: column;
 }
 
-@media (max-device-width: 500px) {
+@media (max-device-width: 575px) {
   .M-l.hide {
     display: none;
   }

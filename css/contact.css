@@ -49,11 +49,19 @@ section {
 .header-color,
 .footer-color {
   background: #4f6272;
-  background: linear-gradient(180deg, rgba(79, 98, 114, 0.2) 0%, rgba(79, 98, 114, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(79, 98, 114, 0.2) 0%,
+    rgba(79, 98, 114, 0) 100%
+  );
 }
 
 .footer-color {
-  background: linear-gradient(0deg, rgba(79, 98, 114, 0.2) 0%, rgba(79, 98, 114, 0) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(79, 98, 114, 0.2) 0%,
+    rgba(79, 98, 114, 0) 100%
+  );
 }
 
 .modify-li-items > nav > ul {
@@ -157,7 +165,7 @@ p {
     font-size: 1.2rem;
   }
 }
-@media (max-device-width: 500px) {
+@media (max-device-width: 575px) {
   * > main {
     margin: auto;
   }
@@ -271,7 +279,7 @@ img.float-img-right {
   float: right;
 }
 
-@media (max-device-width: 500px) {
+@media (max-device-width: 575px) {
   a.button-box {
     text-align: center;
     display: block;
@@ -293,7 +301,8 @@ img.float-img-right {
     padding: 0.5rem 1rem;
   }
   .M-l.move-img-down {
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
     margin-bottom: 1rem;
     float: none;
   }
@@ -364,7 +373,7 @@ section.flex-container.row h6 {
   flex-direction: column;
 }
 
-@media (max-device-width: 500px) {
+@media (max-device-width: 575px) {
   .M-l.hide {
     display: none;
   }
@@ -519,7 +528,7 @@ form {
     width: 100%;
   }
 }
-@media (max-device-width: 550px) {
+@media (max-device-width: 575px) {
   form {
     width: 90%;
     margin: auto;
