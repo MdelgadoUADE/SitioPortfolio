@@ -140,7 +140,9 @@ section {
   font-size: 1.9rem;
   font-weight: 600;
 }
-
+p.subtitle-text {
+  display: inline;
+}
 .footer-text-fixed {
   align-self: center;
   text-align: center;
@@ -176,16 +178,21 @@ p {
   }
 }
 
-@media (max-device-width: 425px) {
+@media (max-device-width: 500px) {
   * > main {
     margin: auto;
     & > section > p {
+      width: 100%;
       margin: auto;
       margin-bottom: revert;
     }
   }
+  body > main {
+    padding: 1rem 0.5rem;
+  }
   .title-text {
     font-size: 2.5rem;
+    clear: left;
   }
   .logotype-text {
     font-size: 1.5rem;
@@ -195,3 +202,9 @@ p {
     display: none;
   }
 }
+
+// Aqui abajo se añaden las stylesheets para generacion de codigo CSS unico, remover de comentario cuando se genera una nueva
+// @forward "./index.scss";
+// @forward "./portfolio.scss";
+// @forward "./blog.scss";
+// @forward "./contact.scss"

@@ -31,6 +31,7 @@ p.force-fit-width {
 }
 
 .photo-offset {
+  overflow: hidden;
   margin-top: 2.3rem;
   margin-bottom: 10rem;
   float: right;
@@ -66,11 +67,10 @@ a.button-box {
     width: -webkit-fill-available;
     display: flex;
     justify-content: space-between;
-
+    margin-bottom: 1rem;
     flex-wrap: wrap;
     > * {
       width: 55%;
-      margin-bottom: 1rem;
     }
     > a {
       width: initial;
@@ -91,4 +91,49 @@ img.float-img-left {
 }
 img.float-img-right {
   float: right;
+}
+
+@media (max-device-width: 500px) {
+  a.button-box {
+    text-align: center;
+    display: block;
+    margin: auto;
+  }
+  .p-width-adjust > p {
+    width: 100%;
+  }
+  .p-width-adjust-max > p {
+    width: 100%;
+  }
+  .flex-container {
+    flex-direction: column;
+    &.M-l.no-column {
+      flex-direction: row;
+      button {
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+  .M-l {
+    &.move-img-down {
+      width: 90%;
+      margin-left: 5%;
+      margin-bottom: 1rem;
+      float: none;
+    }
+    &.container-center {
+      display: block;
+      width: fit-content;
+      margin: auto;
+      margin-bottom: 1rem;
+    }
+    &.margin-bottom {
+      margin-bottom: 1rem;
+    }
+    &.force-left {
+      margin: auto;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  }
 }

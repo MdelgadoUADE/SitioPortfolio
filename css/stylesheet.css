@@ -117,6 +117,10 @@ section {
   font-weight: 600;
 }
 
+p.subtitle-text {
+  display: inline;
+}
+
 .footer-text-fixed {
   align-self: center;
   text-align: center;
@@ -153,16 +157,21 @@ p {
     font-size: 1.2rem;
   }
 }
-@media (max-device-width: 425px) {
+@media (max-device-width: 500px) {
   * > main {
     margin: auto;
   }
   * > main > section > p {
+    width: 100%;
     margin: auto;
     margin-bottom: revert;
   }
+  body > main {
+    padding: 1rem 0.5rem;
+  }
   .title-text {
     font-size: 2.5rem;
+    clear: left;
   }
   .logotype-text {
     font-size: 1.5rem;

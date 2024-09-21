@@ -117,6 +117,10 @@ section {
   font-weight: 600;
 }
 
+p.subtitle-text {
+  display: inline;
+}
+
 .footer-text-fixed {
   align-self: center;
   text-align: center;
@@ -153,16 +157,21 @@ p {
     font-size: 1.2rem;
   }
 }
-@media (max-device-width: 425px) {
+@media (max-device-width: 500px) {
   * > main {
     margin: auto;
   }
   * > main > section > p {
+    width: 100%;
     margin: auto;
     margin-bottom: revert;
   }
+  body > main {
+    padding: 1rem 0.5rem;
+  }
   .title-text {
     font-size: 2.5rem;
+    clear: left;
   }
   .logotype-text {
     font-size: 1.5rem;
@@ -198,6 +207,7 @@ p.force-fit-width {
 }
 
 .photo-offset {
+  overflow: hidden;
   margin-top: 2.3rem;
   margin-bottom: 10rem;
   float: right;
@@ -235,11 +245,11 @@ a.button-box {
   width: -webkit-fill-available;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1rem;
   flex-wrap: wrap;
 }
 .flex-container ul > * {
   width: 55%;
-  margin-bottom: 1rem;
 }
 .flex-container ul > a {
   width: initial;
@@ -261,6 +271,42 @@ img.float-img-right {
   float: right;
 }
 
+@media (max-device-width: 500px) {
+  a.button-box {
+    text-align: center;
+    display: block;
+    margin: auto;
+  }
+  .p-width-adjust > p {
+    width: 100%;
+  }
+  .p-width-adjust-max > p {
+    width: 100%;
+  }
+  .flex-container {
+    flex-direction: column;
+  }
+  .M-l.move-img-down {
+    width: 100%;
+    margin-bottom: 1rem;
+    float: none;
+  }
+  .M-l.container-center {
+    display: block;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+  .M-l.margin-bottom {
+    margin-bottom: 1rem;
+  }
+  .M-l.force-left {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
 .adjust-margin-boxes > * {
   margin: 1rem 0rem;
 }
@@ -310,4 +356,33 @@ section.flex-container.row h6 {
 
 .flex-direction-column {
   flex-direction: column;
+}
+
+@media (max-device-width: 500px) {
+  .M-l.hide {
+    display: none;
+  }
+  .flex-container ul > * {
+    width: 100%;
+  }
+  .flex-container-img-small {
+    width: 100%;
+  }
+  .flex-container-img-smaller {
+    width: 100%;
+  }
+  .flex-direction-column {
+    margin: 1rem 0;
+  }
+  .flex-direction-column > * {
+    margin: 0.5rem 0;
+  }
+  h2 {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+  section.flex-container .M-l.adjust-text-size {
+    font-size: 1.8rem;
+  }
 }

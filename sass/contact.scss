@@ -82,3 +82,41 @@ form {
   border-radius: 100%;
   width: 9vw;
 }
+
+@media (max-device-width: 880px) {
+  .M-l.padding-left {
+    padding: 0 0.5rem;
+  }
+  a {
+    text-overflow: ellipsis;
+  }
+  .social-logo img {
+    width: 19vw;
+  }
+  .block-color-grid {
+    grid-template-areas:
+      "name-div"
+      "email-div"
+      "type-div"
+      "text-div";
+    input,
+    select {
+      box-sizing: border-box;
+      margin-left: 10%;
+      width: 80%;
+    }
+  }
+  .block-color-grid #text-div {
+    flex-direction: column;
+  }
+  .block-color-grid #text-div > textarea {
+    width: 100%;
+  }
+}
+
+@media (max-device-width: 550px) {
+  form {
+    width: 90%;
+    margin: auto;
+  }
+}
