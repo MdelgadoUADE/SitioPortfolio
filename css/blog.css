@@ -49,19 +49,11 @@ section {
 .header-color,
 .footer-color {
   background: #4f6272;
-  background: linear-gradient(
-    180deg,
-    rgba(79, 98, 114, 0.2) 0%,
-    rgba(79, 98, 114, 0) 100%
-  );
+  background: linear-gradient(180deg, rgba(79, 98, 114, 0.2) 0%, rgba(79, 98, 114, 0) 100%);
 }
 
 .footer-color {
-  background: linear-gradient(
-    0deg,
-    rgba(79, 98, 114, 0.2) 0%,
-    rgba(79, 98, 114, 0) 100%
-  );
+  background: linear-gradient(0deg, rgba(79, 98, 114, 0.2) 0%, rgba(79, 98, 114, 0) 100%);
 }
 
 .modify-li-items > nav > ul {
@@ -206,7 +198,6 @@ p.force-fit-width {
 }
 
 .photo-offset {
-  overflow: hidden;
   margin-top: 2.3rem;
   margin-bottom: 10rem;
   float: right;
@@ -268,4 +259,82 @@ img.float-img-left {
 
 img.float-img-right {
   float: right;
+}
+
+.adjust-margin-boxes > * {
+  margin: 1rem 0rem;
+}
+
+.image-transform {
+  width: 80vw;
+}
+
+section.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+section.flex-container.row {
+  flex-direction: row;
+}
+section.flex-container.row > h1,
+section.flex-container.row h2,
+section.flex-container.row h3,
+section.flex-container.row h4,
+section.flex-container.row h5,
+section.flex-container.row h6 {
+  width: 100vw;
+}
+
+.flex-container-img {
+  align-self: center;
+}
+.flex-container-img-small {
+  border-radius: 50px;
+  align-self: unset;
+  width: 50vw;
+  height: auto;
+}
+.flex-container-img-smaller {
+  border-radius: 35px;
+  margin: 1rem 0;
+  align-self: unset;
+  width: 30vw;
+  height: auto;
+}
+
+.flex-container-center {
+  align-self: center;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.faded-block-color {
+  background-color: rgba(79, 98, 114, 0.2);
+}
+.faded-block-color-blogpost {
+  background-color: rgba(79, 98, 114, 0.2);
+  padding: 1.5rem;
+  border-radius: 30px;
+}
+.faded-block-color-blogpost hgroup {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+}
+.faded-block-color-blogpost hgroup h2 {
+  width: -webkit-fill-available;
+}
+.faded-block-color-blogpost hgroup h3 {
+  margin-left: 2rem;
+}
+.faded-block-color-blogpost li {
+  margin-left: 2rem;
+}
+.faded-block-color-blogpost * {
+  margin-bottom: 1rem;
 }

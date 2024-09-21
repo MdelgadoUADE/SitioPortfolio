@@ -1,0 +1,31 @@
+@forward "./stylesheet.scss";
+@use "./stylesheet.scss" as main;
+@use "./designs.scss" as d;
+@use "./index.scss" as i;
+@use "./portfolio.scss" as p;
+
+.faded-block-color {
+  background-color: d.$primary-color-faded;
+  &-blogpost {
+    background-color: d.$primary-color-faded;
+    padding: 1.5rem;
+    border-radius: 30px;
+    hgroup {
+      width: fit-content;
+      display: flex;
+      flex-wrap: wrap;
+      h2 {
+        width: -webkit-fill-available;
+      }
+      h3 {
+        margin-left: 2rem;
+      }
+    }
+    li {
+      margin-left: 2rem;
+    }
+    * {
+      margin-bottom: 1rem;
+    }
+  }
+}

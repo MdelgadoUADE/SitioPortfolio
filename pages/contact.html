@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/stylesheet.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
 
     <title>Contacto | Matías Delgado</title>
   </head>
@@ -22,7 +22,7 @@
           <li>
             <a href="./blog.html">Blog</a>
           </li>
-          <li>
+          <li class="underline">
             <a href="./contact.html" class="selected">Contacto</a>
           </li>
         </ul>
@@ -30,52 +30,69 @@
     </header>
     <main>
       <!-- Formulario de contacto. -->
-      <h2 class="title-text">Contactame</h2>
+      <h2 class="title-text">¿Interesado en lo visto?</h2>
+      <h2 class="title-text underline">¡Dejame tu consulta!</h2>
       <form action="">
-        <!-- Nombre -->
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" />
-        <!-- Correo -->
-        <label for="email">Correo Electrónico:</label>
-        <input type="email" id="email" name="email" required />
-        <!-- Contacto / Seleccionable -->
-        <label for="reason">Motivo del Contacto:</label>
-        <select id="reason" name="reason">
-          <option value="general">Consulta</option>
-          <option value="projectWeb">Propuesta de Proyecto Web</option>
-          <option value="layout">Maquetación</option>
-          <option value="feedback">Feedback</option>
-          <option value="other">Otros</option>
-        </select>
-        <!-- Mensaje -->
-        <label for="message">Mensaje:</label>
-        <textarea id="message" name="message"></textarea>
-        <button type="submit">Enviar</button>
-        <button type="reset">Borrar</button>
+        <div class="block-color-grid">
+          <!-- Nombre -->
+          <div id="name-div">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" />
+          </div>
+          <!-- Correo -->
+          <div id="email-div">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <!-- Contacto / Seleccionable -->
+          <div id="type-div">
+            <label for="reason">Motivo del Contacto:</label>
+            <select id="reason" name="reason">
+              <option value="general">Consulta</option>
+              <option value="projectWeb">Propuesta de Proyecto Web</option>
+              <option value="layout">Maquetación</option>
+              <option value="feedback">Feedback</option>
+              <option value="other">Otros</option>
+            </select>
+          </div>
+          <!-- Mensaje -->
+          <div id="text-div">
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+        </div>
+        <div class="flex-container">
+          <button type="submit" class="button-box-primary">Enviar</button>
+          <button type="reset" class="button-box-warning">Borrar</button>
+        </div>
       </form>
-      <h2>... O podes mandarme un mail directo a mi casilla!</h2>
-      <!-- Reemplazar por mail de pagina para evitar spam en casilla personal -->
-      <a href="mailto: matiasdelgadomoina@outlook.com"
-        >Matiasdelgadomoina@outlook.com</a
-      >
-      <!-- Conseguir otro numero para encajar -->
-      <h3>... O un Whatsapp siempre funciona.</h3>
-      <a href="https://wa.me/5491161212565" target="_blank"
-        >Link a mi Whatsapp</a
-      >
-      <br />
-      <!-- 
-       Enlaces a perfiles en redes sociales profesionales. 
-       Y otras plataformas donde se tenga presencia profesional.
-       -->
-      <h2>Redes Sociales</h2>
-      <a href="https://www.linkedin.com/in/mdelgadomoina/" target="_blank"
-        ><strong>LinkedIn</strong></a
-      >
-      <a href="https://github.com/VistaO7" target="_blank"
-        ><strong>Github</strong></a
-      >
-      <br />
+      <section class="padding-left">
+        <h2 class="subtitle-text reference">
+          ... O podes mandarme un mail directo a mi casilla!
+        </h2>
+        <!-- Reemplazar por mail de pagina para evitar spam en casilla personal -->
+        <a href="mailto: matiasdelgadomoina@outlook.com"
+          >Matiasdelgadomoina@outlook.com</a
+        >
+        <!-- Conseguir otro numero para encajar -->
+        <h3>... O un Whatsapp siempre funciona.</h3>
+        <a href="https://wa.me/5491161212565" target="_blank"
+          >Link a mi Whatsapp</a
+        >
+      </section>
+      <section class="flex-container row social-logo">
+        <!-- 
+           Enlaces a perfiles en redes sociales profesionales. 
+           Y otras plataformas donde se tenga presencia profesional.
+           -->
+        <h2 class="title-text">Redes Sociales</h2>
+        <a href="https://www.linkedin.com/in/mdelgadomoina/" target="_blank"
+          ><img src="../img/RRSS/linkedin.png" alt="logo de linkedin"
+        /></a>
+        <a href="https://github.com/VistaO7" target="_blank"
+          ><img src="../img/RRSS/github.png" alt="logo de GitHub"
+        /></a>
+      </section>
     </main>
     <footer class="footer-flex footer-color footer-adjust-bottom">
       <a href="./contact.html"><strong>Contactos</strong></a>
