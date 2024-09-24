@@ -204,12 +204,12 @@ p {
   nav > ul > li a {
     font-size: 2rem;
   }
-  .visible:root:not(nav) {
-    display: none;
-  }
   .visible {
     opacity: 1;
     visibility: visible;
+  }
+  .invisible {
+    display: none;
   }
   .abrir-menu,
   .cerrar-menu {

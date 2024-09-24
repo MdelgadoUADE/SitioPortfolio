@@ -227,12 +227,12 @@ p {
     }
   }
 
-  .visible:root:not(nav) {
-    display: none;
-  }
   .visible {
     opacity: 1;
     visibility: visible;
+  }
+  .invisible {
+    display: none;
   }
 
   .abrir-menu,
